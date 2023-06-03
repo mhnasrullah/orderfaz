@@ -1,5 +1,5 @@
 <template>
-    <div class="font-sf-pro min-h-screen flex items-center justify-center flex-col">
+    <div class="min-h-screen flex items-center justify-center flex-col">
 
         <h1 class="font-bold text-4xl lg:text-6xl text-center">Country</h1>
 
@@ -8,11 +8,8 @@
             <NanoInput
             v-model="inputValue"
             placeholder="Type any country name"
-            class="w-full">
-                <template #right-side>
-                    <IconSearch class="w-5 h-5 mr-2"/>
-                </template>
-            </NanoInput>
+            class="w-full"
+            is-search />
 
             <div class="absolute w-full mt-2">
                 <MicroPopUpListCountry

@@ -9,12 +9,12 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
-    fontFamily : {
-      'sf-pro' : ['sf-pro','sans-serif']
-    },
     colors : {
       black : '#000000',
-      gray : '#C8C8C8'
+      gray : '#C8C8C8',
+      purple : "#8362F2",
+      white : "#ffffff",
+      'egg-green' : "#8DD4CC"
     },
     extend: {},
   },

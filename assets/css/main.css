@@ -21,6 +21,10 @@
     font-weight: 700
 }
 
+body {
+    font-family: 'sf-pro', sans-serif
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

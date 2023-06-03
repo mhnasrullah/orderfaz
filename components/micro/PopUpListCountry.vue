@@ -3,7 +3,7 @@
         <NuxtLink
         v-for="(e,i) in data"
         class="block hover:bg-[#F4F4F4] text-sm lg:text-base"
-        :href="e.route"
+        :href="e.name"
         :key="i">
             {{e.name}}
         </NuxtLink>
@@ -13,9 +13,7 @@
 <script lang="ts" setup>
 
 type dataType = {
-    name : string,
-    official : string,
-    route : string
+    name : string
 }
 
 interface dataInterface {
