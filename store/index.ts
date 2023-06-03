@@ -25,7 +25,12 @@ export const useCountryStore = defineStore('country',()=>{
             name :detailCountry.value.name.common,
             flag : detailCountry.value.flags.svg,
             altFlag : detailCountry.value.flags.alt,
-            tag : detailCountry.value.altSpellings
+            tag : detailCountry.value.altSpellings,
+            latitude : detailCountry.value.capitalInfo.latlng[0],
+            longitude : detailCountry.value.capitalInfo.latlng[1], 
+            region : detailCountry.value.region,
+            subRegion : detailCountry.value.subregion,
+            capital : detailCountry.value.capital[0]
         }}
     )
 

@@ -4,13 +4,28 @@
         nuxt-link
         href="/">&larr; Back to homepage</NanoButton>
 
-        <MicroLabelTagInfo
-        v-if="getterDetailCountry"
-        :country="getterDetailCountry.name"
-        :flag="getterDetailCountry.flag"
-        :label="getterDetailCountry.tag"
-        :alt="getterDetailCountry.altFlag"
-        class="mt-10"/>
+        <div
+        v-if="getterDetailCountry">
+            <MicroLabelTagInfo
+            :country="getterDetailCountry.name"
+            :flag="getterDetailCountry.flag"
+            :label="getterDetailCountry.tag"
+            :alt="getterDetailCountry.altFlag"
+            class="mt-10"/>
+
+            <div class="mt-8">
+                <MicroLatLong
+                :latitude="getterDetailCountry.latitude"
+                :longitude="getterDetailCountry.longitude"/>
+
+                <MicroInfoRegion
+                :capital="getterDetailCountry.capital"
+                :region="getterDetailCountry.region"
+                :sub-region="getterDetailCountry.subRegion"/>
+
+            </div>
+        </div>
+
     </div>
 </template>
 
